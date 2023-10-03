@@ -9,15 +9,79 @@ struct ContentView: View {
     }
 }
 
+
 struct SceneKitView: UIViewRepresentable {
     // get the values from the state variables
     @Binding var sceneView: SCNView?
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    class Coordinator: NSObject, UIGestureRecognizerDelegate {
+        var scnView: SCNView?
+        var parent: SceneKitView
+
+        init(_ parent: SceneKitView) {
+            self.parent = parent
+        }
+        
+        @objc func handleTap(_ gestureRecognize: UITapGestureRecognizer) {
+            print("handled")
+            guard let scnView = self.scnView else { return }
+            
+            // Désactiver temporairement allowsCameraControl
+            scnView.allowsCameraControl = false
+            
+            let p = gestureRecognize.location(in: scnView)
+            let hitResults = scnView.hitTest(p, options: [:])
+            
+            if hitResults.count > 0 {
+                let result = hitResults[0]
+                if let name = result.node.name {
+                    print("Nom de l'atome touché : \(name)")
+                    // Récupérer la position de l'atome
+                    let atomPosition = result.node.position
+                    
+                    // Trouver le nœud de la caméra
+                    if let cameraNode = scnView.scene?.rootNode.childNode(withName: "cameraNode", recursively: false) {
+                        
+                        // print("Position de la caméra avant: \(cameraNode.position)")
+                        SCNTransaction.begin()
+                        SCNTransaction.animationDuration = 0.5 // Durée en secondes
+                        cameraNode.position = SCNVector3(x: atomPosition.x, y: atomPosition.y, z: 10)
+                        SCNTransaction.commit()
+                        // print("Position de la caméra après: \(cameraNode.position)")
+                    }
+                }
+            } else {
+                // Trouver le nœud de la caméra
+                if let cameraNode = scnView.scene?.rootNode.childNode(withName: "cameraNode", recursively: false) {
+                    
+                    // Ajuster la position de la caméra
+                    // print("Position de la caméra avant: \(cameraNode.position)")
+                    SCNTransaction.begin()
+                    SCNTransaction.animationDuration = 0.5 // Durée en secondes
+                    cameraNode.position = SCNVector3(x: 0, y: 0, z: 50)
+                    SCNTransaction.commit()
+                }
+            }
+        }
+        
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+            return true
+        }
+    }
 
     // create the scene view
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView()
         sceneView.scene = SCNScene()
-        sceneView.allowsCameraControl = true
+//        sceneView.allowsCameraControl = false
+        context.coordinator.scnView = sceneView
+        let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
+        tapGesture.delegate = context.coordinator
+        sceneView.addGestureRecognizer(tapGesture)
         
         return sceneView
     }
