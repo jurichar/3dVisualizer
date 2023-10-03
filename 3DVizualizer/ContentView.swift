@@ -21,6 +21,8 @@ struct SceneKitView: UIViewRepresentable {
     class Coordinator: NSObject, UIGestureRecognizerDelegate {
         var scnView: SCNView?
         var parent: SceneKitView
+        var tooltipLabel: UILabel?
+
 
         init(_ parent: SceneKitView) {
             self.parent = parent
@@ -36,6 +38,7 @@ struct SceneKitView: UIViewRepresentable {
             if hitResults.count > 0 {
                 let result = hitResults[0]
                 if let name = result.node.name {
+                    tooltipLabel?.text = "\(name) : \(result.node.name?.split(separator: " ")[1] ?? "pouet")"
                     print("Nom de l'atome touché : \(name)")
                     // Récupérer la position de l'atome
                     let atomPosition = result.node.position
@@ -49,6 +52,9 @@ struct SceneKitView: UIViewRepresentable {
                         cameraNode.position = SCNVector3(x: atomPosition.x, y: atomPosition.y, z: 10)
                         SCNTransaction.commit()
                     }
+                } else {
+                    tooltipLabel?.text = ""
+                    tooltipLabel?.backgroundColor = .white
                 }
             } else {
                 // Trouver le nœud de la caméra
@@ -73,6 +79,16 @@ struct SceneKitView: UIViewRepresentable {
     func makeUIView(context: Context) -> SCNView {
         let sceneView = SCNView()
         sceneView.scene = SCNScene()
+        let label = UILabel(frame: CGRect(x: 10, y: Int(sceneView.frame.height) - 50, width: Int(sceneView.frame.width) - 20, height: 40))
+        // modifier la position du label
+        label.numberOfLines = 0
+        label.textColor = .green
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.text = "qpwokepqokwpek"
+        label.backgroundColor = .gray
+        label.textAlignment = .center
+        sceneView.addSubview(label)
+        context.coordinator.tooltipLabel = label
 //        sceneView.allowsCameraControl = false
         context.coordinator.scnView = sceneView
         let tapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
@@ -289,3 +305,11 @@ struct SceneKitView: UIViewRepresentable {
         uiView.scene?.rootNode.addChildNode(returnNode)
     }
 }
+
+// TODO :
+// - Ajouter un label qui affiche le nom de l'atome lorsqu'on clique dessus
+// - Ajouter un system de zoom (gestures)
+// - Ajouter un system de rotation (gestures)
+// - Ajouter un system de rotation automatique
+// - Ajouter un bouton share pour partager l'image
+// - Ajouter un bouton pour revenir a la liste des molécules
