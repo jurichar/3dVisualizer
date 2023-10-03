@@ -7,61 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B10E52D2AC70B2D008328F5 /* DB01718.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 8B10E52C2AC70B2D008328F5 /* DB01718.pdb */; };
 		8BEB82602AC4739E00ED08E3 /* _DVizualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */; };
 		8BEB82622AC4739E00ED08E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB82612AC4739E00ED08E3 /* ContentView.swift */; };
 		8BEB82642AC4739F00ED08E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB82632AC4739F00ED08E3 /* Assets.xcassets */; };
 		8BEB82672AC4739F00ED08E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB82662AC4739F00ED08E3 /* Preview Assets.xcassets */; };
-		8BEB82712AC473A000ED08E3 /* _DVizualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB82702AC473A000ED08E3 /* _DVizualizerTests.swift */; };
-		8BEB827B2AC473A000ED08E3 /* _DVizualizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB827A2AC473A000ED08E3 /* _DVizualizerUITests.swift */; };
-		8BEB827D2AC473A000ED08E3 /* _DVizualizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB827C2AC473A000ED08E3 /* _DVizualizerUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8BEB826D2AC473A000ED08E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BEB82542AC4739E00ED08E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BEB825B2AC4739E00ED08E3;
-			remoteInfo = 3DVizualizer;
-		};
-		8BEB82772AC473A000ED08E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BEB82542AC4739E00ED08E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BEB825B2AC4739E00ED08E3;
-			remoteInfo = 3DVizualizer;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		8B10E52C2AC70B2D008328F5 /* DB01718.pdb */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = DB01718.pdb; sourceTree = "<group>"; };
 		8BEB825C2AC4739E00ED08E3 /* 3DVizualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DVizualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVizualizerApp.swift; sourceTree = "<group>"; };
 		8BEB82612AC4739E00ED08E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BEB82632AC4739F00ED08E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BEB82662AC4739F00ED08E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8BEB826C2AC473A000ED08E3 /* 3DVizualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DVizualizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BEB82702AC473A000ED08E3 /* _DVizualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVizualizerTests.swift; sourceTree = "<group>"; };
-		8BEB82762AC473A000ED08E3 /* 3DVizualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DVizualizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BEB827A2AC473A000ED08E3 /* _DVizualizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVizualizerUITests.swift; sourceTree = "<group>"; };
-		8BEB827C2AC473A000ED08E3 /* _DVizualizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVizualizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8BEB82592AC4739E00ED08E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB82692AC473A000ED08E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB82732AC473A000ED08E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,8 +38,6 @@
 			isa = PBXGroup;
 			children = (
 				8BEB825E2AC4739E00ED08E3 /* 3DVizualizer */,
-				8BEB826F2AC473A000ED08E3 /* 3DVizualizerTests */,
-				8BEB82792AC473A000ED08E3 /* 3DVizualizerUITests */,
 				8BEB825D2AC4739E00ED08E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				8BEB825C2AC4739E00ED08E3 /* 3DVizualizer.app */,
-				8BEB826C2AC473A000ED08E3 /* 3DVizualizerTests.xctest */,
-				8BEB82762AC473A000ED08E3 /* 3DVizualizerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +56,7 @@
 				8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */,
 				8BEB82612AC4739E00ED08E3 /* ContentView.swift */,
 				8BEB82632AC4739F00ED08E3 /* Assets.xcassets */,
+				8B10E52C2AC70B2D008328F5 /* DB01718.pdb */,
 				8BEB82652AC4739F00ED08E3 /* Preview Content */,
 			);
 			path = 3DVizualizer;
@@ -108,23 +68,6 @@
 				8BEB82662AC4739F00ED08E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8BEB826F2AC473A000ED08E3 /* 3DVizualizerTests */ = {
-			isa = PBXGroup;
-			children = (
-				8BEB82702AC473A000ED08E3 /* _DVizualizerTests.swift */,
-			);
-			path = 3DVizualizerTests;
-			sourceTree = "<group>";
-		};
-		8BEB82792AC473A000ED08E3 /* 3DVizualizerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8BEB827A2AC473A000ED08E3 /* _DVizualizerUITests.swift */,
-				8BEB827C2AC473A000ED08E3 /* _DVizualizerUITestsLaunchTests.swift */,
-			);
-			path = 3DVizualizerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,42 +90,6 @@
 			productReference = 8BEB825C2AC4739E00ED08E3 /* 3DVizualizer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8BEB826B2AC473A000ED08E3 /* 3DVizualizerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BEB82832AC473A000ED08E3 /* Build configuration list for PBXNativeTarget "3DVizualizerTests" */;
-			buildPhases = (
-				8BEB82682AC473A000ED08E3 /* Sources */,
-				8BEB82692AC473A000ED08E3 /* Frameworks */,
-				8BEB826A2AC473A000ED08E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BEB826E2AC473A000ED08E3 /* PBXTargetDependency */,
-			);
-			name = 3DVizualizerTests;
-			productName = 3DVizualizerTests;
-			productReference = 8BEB826C2AC473A000ED08E3 /* 3DVizualizerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8BEB82752AC473A000ED08E3 /* 3DVizualizerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BEB82862AC473A000ED08E3 /* Build configuration list for PBXNativeTarget "3DVizualizerUITests" */;
-			buildPhases = (
-				8BEB82722AC473A000ED08E3 /* Sources */,
-				8BEB82732AC473A000ED08E3 /* Frameworks */,
-				8BEB82742AC473A000ED08E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BEB82782AC473A000ED08E3 /* PBXTargetDependency */,
-			);
-			name = 3DVizualizerUITests;
-			productName = 3DVizualizerUITests;
-			productReference = 8BEB82762AC473A000ED08E3 /* 3DVizualizerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +102,6 @@
 				TargetAttributes = {
 					8BEB825B2AC4739E00ED08E3 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					8BEB826B2AC473A000ED08E3 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 8BEB825B2AC4739E00ED08E3;
-					};
-					8BEB82752AC473A000ED08E3 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 8BEB825B2AC4739E00ED08E3;
 					};
 				};
 			};
@@ -220,8 +119,6 @@
 			projectRoot = "";
 			targets = (
 				8BEB825B2AC4739E00ED08E3 /* 3DVizualizer */,
-				8BEB826B2AC473A000ED08E3 /* 3DVizualizerTests */,
-				8BEB82752AC473A000ED08E3 /* 3DVizualizerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,22 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B10E52D2AC70B2D008328F5 /* DB01718.pdb in Resources */,
 				8BEB82672AC4739F00ED08E3 /* Preview Assets.xcassets in Resources */,
 				8BEB82642AC4739F00ED08E3 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB826A2AC473A000ED08E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB82742AC473A000ED08E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,37 +146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BEB82682AC473A000ED08E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BEB82712AC473A000ED08E3 /* _DVizualizerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BEB82722AC473A000ED08E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BEB827D2AC473A000ED08E3 /* _DVizualizerUITestsLaunchTests.swift in Sources */,
-				8BEB827B2AC473A000ED08E3 /* _DVizualizerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8BEB826E2AC473A000ED08E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BEB825B2AC4739E00ED08E3 /* 3DVizualizer */;
-			targetProxy = 8BEB826D2AC473A000ED08E3 /* PBXContainerItemProxy */;
-		};
-		8BEB82782AC473A000ED08E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BEB825B2AC4739E00ED08E3 /* 3DVizualizer */;
-			targetProxy = 8BEB82772AC473A000ED08E3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8BEB827E2AC473A000ED08E3 /* Debug */ = {
@@ -430,6 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,82 +325,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8BEB82842AC473A000ED08E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86VT643277;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.-DVizualizerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DVizualizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/3DVizualizer";
-			};
-			name = Debug;
-		};
-		8BEB82852AC473A000ED08E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86VT643277;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.-DVizualizerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DVizualizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/3DVizualizer";
-			};
-			name = Release;
-		};
-		8BEB82872AC473A000ED08E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86VT643277;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.-DVizualizerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 3DVizualizer;
-			};
-			name = Debug;
-		};
-		8BEB82882AC473A000ED08E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 86VT643277;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.-DVizualizerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 3DVizualizer;
 			};
 			name = Release;
 		};
@@ -565,24 +345,6 @@
 			buildConfigurations = (
 				8BEB82812AC473A000ED08E3 /* Debug */,
 				8BEB82822AC473A000ED08E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BEB82832AC473A000ED08E3 /* Build configuration list for PBXNativeTarget "3DVizualizerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BEB82842AC473A000ED08E3 /* Debug */,
-				8BEB82852AC473A000ED08E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BEB82862AC473A000ED08E3 /* Build configuration list for PBXNativeTarget "3DVizualizerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BEB82872AC473A000ED08E3 /* Debug */,
-				8BEB82882AC473A000ED08E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
