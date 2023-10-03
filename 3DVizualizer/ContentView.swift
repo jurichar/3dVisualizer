@@ -30,9 +30,6 @@ struct SceneKitView: UIViewRepresentable {
             print("handled")
             guard let scnView = self.scnView else { return }
             
-            // Désactiver temporairement allowsCameraControl
-            scnView.allowsCameraControl = false
-            
             let p = gestureRecognize.location(in: scnView)
             let hitResults = scnView.hitTest(p, options: [:])
             
@@ -51,7 +48,6 @@ struct SceneKitView: UIViewRepresentable {
                         SCNTransaction.animationDuration = 0.5 // Durée en secondes
                         cameraNode.position = SCNVector3(x: atomPosition.x, y: atomPosition.y, z: 10)
                         SCNTransaction.commit()
-                        // print("Position de la caméra après: \(cameraNode.position)")
                     }
                 }
             } else {
