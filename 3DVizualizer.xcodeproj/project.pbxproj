@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B10E52D2AC70B2D008328F5 /* DB01718.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 8B10E52C2AC70B2D008328F5 /* DB01718.pdb */; };
+		8B10E52D2AC70B2D008328F5 /* DB01718.sdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B10E52C2AC70B2D008328F5 /* DB01718.sdf */; };
 		8BEB82602AC4739E00ED08E3 /* _DVizualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */; };
 		8BEB82622AC4739E00ED08E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB82612AC4739E00ED08E3 /* ContentView.swift */; };
 		8BEB82642AC4739F00ED08E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEB82632AC4739F00ED08E3 /* Assets.xcassets */; };
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B10E52C2AC70B2D008328F5 /* DB01718.pdb */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = DB01718.pdb; sourceTree = "<group>"; };
+		8B10E52C2AC70B2D008328F5 /* DB01718.sdf */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = DB01718.sdf; sourceTree = "<group>"; };
 		8BEB825C2AC4739E00ED08E3 /* 3DVizualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DVizualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DVizualizerApp.swift; sourceTree = "<group>"; };
 		8BEB82612AC4739E00ED08E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 				8BEB825F2AC4739E00ED08E3 /* _DVizualizerApp.swift */,
 				8BEB82612AC4739E00ED08E3 /* ContentView.swift */,
 				8BEB82632AC4739F00ED08E3 /* Assets.xcassets */,
-				8B10E52C2AC70B2D008328F5 /* DB01718.pdb */,
+				8B10E52C2AC70B2D008328F5 /* DB01718.sdf */,
 				8BEB82652AC4739F00ED08E3 /* Preview Content */,
 			);
 			path = 3DVizualizer;
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B10E52D2AC70B2D008328F5 /* DB01718.pdb in Resources */,
+				8B10E52D2AC70B2D008328F5 /* DB01718.sdf in Resources */,
 				8BEB82672AC4739F00ED08E3 /* Preview Assets.xcassets in Resources */,
 				8BEB82642AC4739F00ED08E3 /* Assets.xcassets in Resources */,
 			);
