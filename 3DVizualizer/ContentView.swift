@@ -3,7 +3,6 @@ import SceneKit
 
 struct ContentView: View {
     @State private var searchText: String = "16A"
-    @StateObject var sceneKitVM = SceneKitViewModel()
 
     var body: some View {
         VStack {
@@ -23,7 +22,6 @@ struct ContentView: View {
                 Button(action: {
                     // share a screenshot of the molecule
                     print("Share button tapped")
-                    sceneKitVM.cleanScene()
                 }) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.title)
@@ -31,39 +29,14 @@ struct ContentView: View {
                         .padding()
                         .cornerRadius(50)
                 }
-                Button(action: {
-                    // delete view
-                    print("Delete button tapped")
-                    // call the func cleanScene(uiView: SCNView)
-
-                }) {
-                    Image(systemName: "trash")
-                        .font(.title)
-                        .foregroundColor(.gray)
-                        .padding()
-                        .cornerRadius(50)
-                }
             }
-            SceneKitView(searchText: $searchText, viewModel: sceneKitVM)
+            SceneKitView(searchText: $searchText)
         }
-    }
-}
-
-class SceneKitViewModel: ObservableObject {
-    @Published var shouldCleanScene: Bool = false
-    
-    func cleanScene() {
-        shouldCleanScene = true
-    }
-    
-    func sceneCleaned() {
-        shouldCleanScene = false
     }
 }
 
 struct SceneKitView: UIViewRepresentable {
     @Binding var searchText: String
-    @ObservedObject var viewModel: SceneKitViewModel
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -192,19 +165,14 @@ struct SceneKitView: UIViewRepresentable {
         let to: Int
         let weight: Int
     }
-    
-    func cleanScene(uiView: SCNView) {
-        uiView.scene?.rootNode.enumerateChildNodes { (node, stop) in
-            node.removeFromParentNode()
-        }
-    }
 
     func updateUIView(_ uiView: SCNView, context: Context) {
         context.coordinator.scnView = uiView
         
-        if viewModel.shouldCleanScene {
-            cleanScene(uiView: uiView)
-            viewModel.sceneCleaned()
+        if (searchText.count) == 0 {
+            uiView.scene?.rootNode.enumerateChildNodes { (node, stop) in
+                node.removeFromParentNode()
+            }
         }
         // init camera
         var cameraNode = uiView.scene?.rootNode.childNode(withName: "cameraNode", recursively: false)
